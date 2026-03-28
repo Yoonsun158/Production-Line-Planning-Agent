@@ -1,5 +1,7 @@
 
 设计了一个AI agent，用于为不同类型的废旧电池生成回收计划报告，并可视化搭建的产线。
+<img width="2000" height="826" alt="image" src="https://github.com/user-attachments/assets/62696968-4c18-42ef-89b0-dd7f164275af" />
+
 
 # Docker 部署
 
