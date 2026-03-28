@@ -3,8 +3,6 @@
 <img width="2000" height="826" alt="image" src="https://github.com/user-attachments/assets/62696968-4c18-42ef-89b0-dd7f164275af" />
 
 
-https://github.com/user-attachments/assets/669761f5-1b4f-4d91-ac27-e0bd3a587c3e
-
 
 
 # Docker 部署
