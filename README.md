@@ -119,15 +119,41 @@ docker start ollama
 
 docker start brd-backend
 
+docker exec brd-backend python init_kb.py
+
+
+
 
 # 客户端(windows)
-# 首次初始化知识库（也需要调用 Ollama 做 embedding）
+
+验证远程访问
+先查看 Linux 机器的局域网 IP：
+
+`ip addr show | grep "inet " 或 hostname -I`
+
+假设 IP 是 192.168.1.100，在 Windows 电脑上打开浏览器访问：
+
+http://10.11.173.9:11434
+
+如果看到 Ollama is running 就说明远程访问已打通。
+如果访问不了，检查 Linux 防火墙：
+
+sudo ufw allow 11434/tcp
+
+设置环境变量
+
+OLLAMA_HOST = http://<客户端的IP>:11434
+
+首次初始化知识库（也需要调用 Ollama 做 embedding）
+
 cd .../BatteryRecovery_V1/backend
 python init_kb.py   
 python server.py
 
-# 浏览器打开前端
+浏览器打开前端
+
 start ../interface.html
+
 ```
 
 # 测试
