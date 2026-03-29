@@ -142,7 +142,7 @@ sudo ufw allow 11434/tcp
 
 设置环境变量
 
-OLLAMA_HOST = http://192.168.1.100:11434
+env:OLLAMA_HOST = "http://192.168.1.100:11434"
 
 首次初始化知识库（也需要调用 Ollama 做 embedding）
 
